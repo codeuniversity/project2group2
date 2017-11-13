@@ -33,6 +33,9 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
         if editingStyle == UITableViewCellEditingStyle.delete {
             self.passengers2.remove(at: indexPath.row)
             
+            
+            
+            
             self.myTableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
