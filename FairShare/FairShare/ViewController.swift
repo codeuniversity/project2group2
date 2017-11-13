@@ -109,7 +109,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var secondController = segue.destination as! ViewController2
+        let secondController = segue.destination as! ViewController2
         secondController.passengers2 = passengers
         
     }
