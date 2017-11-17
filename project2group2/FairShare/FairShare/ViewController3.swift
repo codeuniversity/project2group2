@@ -13,14 +13,28 @@ class ViewController3: UIViewController {
     
     @IBOutlet weak var costInput: UITextField!
     
+    @IBOutlet weak var timeHour: UILabel!
     
+    @IBOutlet weak var timeMinute: UILabel!
+    
+    var passedData: String!;
+    var passedData2: String!;
+    var passedData4 = [""];
+    
+    var passengers4 = [""];
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.timeHour.text = passedData;
+        self.timeMinute.text = passedData2;
 
         costInput.keyboardType = UIKeyboardType.numberPad
+        
+        print("--------------")
+        print(passengers4)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,14 +43,12 @@ class ViewController3: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if let destinationVC4 = segue.destination as? ViewController4 {
+            destinationVC4.passengerEnd = passengers4
+        }
+        
     }
-    */
 
 }

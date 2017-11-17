@@ -23,12 +23,13 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
     var elapsed: Double = 0
     var status: Bool = false
     
-    var psgTextField: UITextField?
-    var emTextField: UITextField?
+    
+    var psgTextField: UITextField?;
+    var emTextField: UITextField?;
     
     
-    //  var list = ["Buy milk", "run 5 miles", "Get Peter", "Do something"]
-   public var passengers2 = [""]
+    var passengers2 = [""];
+    var passengers3 = [""];
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return passengers2.count
@@ -71,8 +72,23 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
         startTime = Date().timeIntervalSinceReferenceDate - elapsed
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
         
-        // Set Start/Stop button to true
         status = true
+//        
+//        let firstVC = ViewController()
+//        passengers2 = firstVC.passengers
+        
+        print(passengers2)
+        print("-----------")
+        print(passengers3)
+        
+        
+        
+//        let firstVC = ViewController()
+//        passengers2 = firstVC.passengers
+//        print(firstVC.passengers)
+//        print(passengers2)
+        
+//        self.passengers3 = passedData3 ;
         
     }
     
@@ -104,5 +120,23 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
         
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if (segue.identifier == "segue3") {
+            let destinationVC = segue.destination as! ViewController3;
+            
+            destinationVC.passedData = labelHour.text;
+            
+            let destinationVC2 = segue.destination as! ViewController3;
+            
+            destinationVC2.passedData2 = labelMinute.text;
+            
+//            destinationVC.passedData4 = passengers3;
+        }
+        
+        if let destinationVC3 = segue.destination as? ViewController3 {
+            destinationVC3.passengers4 = passengers3
+        }
     }
+}
+

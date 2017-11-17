@@ -28,6 +28,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         companyTableView.delegate = self
         companyTableView.dataSource = self
         
+        var defaults = UserDefaults.standard
+        defaults.set(passengers, forKey: "YourKey")
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -105,13 +108,41 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         return UITableViewCell()
+    
         
         
     }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondController = segue.destination as! ViewController2
-        secondController.passengers2 = passengers
+//        let fourthController = segue.destination as! ViewController4
+//        fourthController.passengerEnd = passengers
         
+//        let secondController = segue.destination as! ViewController2
+//        secondController.passengers2 = passengers
+        
+        if let destinationVC = segue.destination as? ViewController2 {
+            destinationVC.passengers2 = passengers
+        }
+        
+        if let destinationVC2 = segue.destination as? ViewController2 {
+            destinationVC2.passengers3 = passengers
+        }
+        
+        
+        print(passengers)
+        
+        
+        
+        
+        
+        
+//        if (segue.identifier == "segue1") {
+//            let destinationVC = segue.destination as! ViewController2;
+//
+//            destinationVC.passedData3 = passengers ;
+//
+//        }
     }
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF468DBB1FBC852200214143 /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF468DBA1FBC852200214143 /* Values.swift */; };
+		BF468DBD1FBC853F00214143 /* FairCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF468DBC1FBC853F00214143 /* FairCalculator.swift */; };
 		BFB0A8EA1FB9B2D300112E88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB0A8E91FB9B2D300112E88 /* AppDelegate.swift */; };
 		BFB0A8EC1FB9B2D300112E88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB0A8EB1FB9B2D300112E88 /* ViewController.swift */; };
 		BFB0A8EF1FB9B2D300112E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB0A8ED1FB9B2D300112E88 /* Main.storyboard */; };
@@ -16,9 +18,12 @@
 		BFB0A9001FB9B3B300112E88 /* Simple VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB0A8FE1FB9B3B300112E88 /* Simple VC.swift */; };
 		BFB0A9011FB9B3B300112E88 /* Simple VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFB0A8FF1FB9B3B300112E88 /* Simple VC.xib */; };
 		BFB0A9031FB9EF1B00112E88 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB0A9021FB9EF1B00112E88 /* ViewController3.swift */; };
+		BFB0A9061FBB108800112E88 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB0A9051FBB108800112E88 /* ViewController4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF468DBA1FBC852200214143 /* Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
+		BF468DBC1FBC853F00214143 /* FairCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairCalculator.swift; sourceTree = "<group>"; };
 		BFB0A8E61FB9B2D300112E88 /* FairShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FairShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB0A8E91FB9B2D300112E88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFB0A8EB1FB9B2D300112E88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		BFB0A8FE1FB9B3B300112E88 /* Simple VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple VC.swift"; sourceTree = "<group>"; };
 		BFB0A8FF1FB9B3B300112E88 /* Simple VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Simple VC.xib"; sourceTree = "<group>"; };
 		BFB0A9021FB9EF1B00112E88 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		BFB0A9051FBB108800112E88 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,9 @@
 				BFB0A8EB1FB9B2D300112E88 /* ViewController.swift */,
 				BFB0A8FB1FB9B31A00112E88 /* ViewController2.swift */,
 				BFB0A9021FB9EF1B00112E88 /* ViewController3.swift */,
+				BFB0A9051FBB108800112E88 /* ViewController4.swift */,
+				BF468DBA1FBC852200214143 /* Values.swift */,
+				BF468DBC1FBC853F00214143 /* FairCalculator.swift */,
 				BFB0A8ED1FB9B2D300112E88 /* Main.storyboard */,
 				BFB0A8F01FB9B2D300112E88 /* Assets.xcassets */,
 				BFB0A8F21FB9B2D300112E88 /* LaunchScreen.storyboard */,
@@ -158,10 +167,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFB0A9031FB9EF1B00112E88 /* ViewController3.swift in Sources */,
+				BFB0A9061FBB108800112E88 /* ViewController4.swift in Sources */,
 				BFB0A8EC1FB9B2D300112E88 /* ViewController.swift in Sources */,
 				BFB0A9001FB9B3B300112E88 /* Simple VC.swift in Sources */,
 				BFB0A8EA1FB9B2D300112E88 /* AppDelegate.swift in Sources */,
 				BFB0A8FC1FB9B31A00112E88 /* ViewController2.swift in Sources */,
+				BF468DBD1FBC853F00214143 /* FairCalculator.swift in Sources */,
+				BF468DBB1FBC852200214143 /* Values.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
